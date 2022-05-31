@@ -9,7 +9,7 @@ export class ZipLookupController {
   async get(data: ZipLookupData): Promise<ZipLookupResponseDto> {
     const res = await this.repository.get(data);
 
-    if (res.status !== 200) {
+    if (res.status !== 200 || !res.data) {
       throw new ApolloError("zip lookup failed");
     }
 

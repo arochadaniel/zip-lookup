@@ -9,8 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@graphql/*": ["modules/graphql/*"],
-      "@features/*": ["modules/features/*"],
-      "@testing/*": ["modules/testing/*"]
+      "@features/*": ["modules/features/*"]
     },
     "outDir": "build",
     "skipLibCheck": true,
