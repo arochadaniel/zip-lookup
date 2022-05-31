@@ -1,0 +1,59 @@
+{
+  "name": "within3-backend-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r tsconfig-paths/register server.ts"
+  },
+  "author": "@arochadaniel",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/schema": "^8.3.13",
+    "apollo-server": "^3.8.1",
+    "axios": "^0.27.2",
+    "graphql": "^16.5.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^27.5.1",
+    "@types/lodash": "^4.14.182",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.4.6",
+    "jest": "^28.1.0",
+    "jest-watch-typeahead": "^1.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^4.0.0",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.7.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@graphql/(.*)": "<rootDir>/modules/graphql/$1",
+      "^@features/(.*)": "<rootDir>/modules/features/$1",
+      "^@testing/(.*)": "<rootDir>/modules/testing/$1"
+    },
+    "setupFiles": [
+      "<rootDir>/modules/testing/jest.setup.js"
+    ],
+    "collectCoverageFrom": [
+      "!<rootDir>/build/"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}
