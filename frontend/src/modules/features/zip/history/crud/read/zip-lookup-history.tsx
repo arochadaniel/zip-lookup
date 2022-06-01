@@ -6,6 +6,8 @@ import { useZipLookupHistoryMemory } from "../../hooks";
 
 interface Props {}
 
+export const NO_HISTORY_MESSAGE = "It seems you have not look for anything...";
+
 export const ZipLookupHistory: FC<Props> = () => {
   const history = useZipLookupHistoryMemory();
 
@@ -27,7 +29,7 @@ export const ZipLookupHistory: FC<Props> = () => {
       {history.length ? (
         <ZipLookupHistoryEntries history={history} />
       ) : (
-        <Typography>It seems you have not look for anything...</Typography>
+        <Typography>{NO_HISTORY_MESSAGE}</Typography>
       )}
     </Card>
   );
