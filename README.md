@@ -28,7 +28,7 @@ Then, in one terminal enter the `backend` folder and run `npm start`.
 
 After that, in another terminal enter the `frontend` folder and run `npm start`.
 
-With both servers running, you can test the application in your browser[http://localhost:3000].
+With both servers running, you can test the application frontend in your [browser](http://localhost:3000), or you can query the server directly via Apollo in your [browser](http://localhost:4000).
 
 ## To improve
 
