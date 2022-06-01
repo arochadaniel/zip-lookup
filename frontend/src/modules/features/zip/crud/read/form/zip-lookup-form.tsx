@@ -11,16 +11,21 @@ interface Props {
 }
 
 export const ZIP_CODE_TEXT_FIELD_PLACEHOLDER = "Enter zip code";
+export const ZIP_CODE_SUBMIT_BUTTON_TEST_ID = "submit-button";
 
 export const ZipLookupForm: FC<Props> = ({ onSubmit: propsOnSubmit }) => {
-  const { handleSubmit, setValue, watch, register } = useForm<ZipLookupData>({
-    defaultValues: { country: "us", zipCode: "" }
-  });
+  const { handleSubmit, setValue, watch, register, reset } =
+    useForm<ZipLookupData>({
+      defaultValues: { country: "us", zipCode: "" }
+    });
 
   const country = watch("country");
 
   const onSubmit = useMemo(() => {
-    return handleSubmit((data) => propsOnSubmit(data));
+    return handleSubmit((data) => {
+      propsOnSubmit(data);
+      reset();
+    });
   }, []);
 
   return (
@@ -36,16 +41,18 @@ export const ZipLookupForm: FC<Props> = ({ onSubmit: propsOnSubmit }) => {
           value={country}
         />
         <TextField
+          fullWidth
+          type="number"
           label={ZIP_CODE_TEXT_FIELD_PLACEHOLDER}
           placeholder={ZIP_CODE_TEXT_FIELD_PLACEHOLDER}
-          fullWidth
-          {...register("zipCode")}
+          {...register("zipCode", { required: "Please write a zip code" })}
         />
         <Button
-          variant="contained"
-          startIcon={<Send />}
           type="submit"
           color="primary"
+          variant="contained"
+          startIcon={<Send />}
+          data-testid={ZIP_CODE_SUBMIT_BUTTON_TEST_ID}
         >
           Search
         </Button>
