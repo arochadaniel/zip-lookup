@@ -39,3 +39,5 @@ This application was built in less than 2 days, so there are areas where it can 
 - UI/UX: the UI/UX of the application is really simple, it has just what is needed to function. With more time I could add animations, a dark mode, a navigation bar, etc.
 
 - Feedback: the user feedback is really simple, just messages of success, failure and loading spinners. With more time, I could add snackbars, improved messages, confirmation dialogs, and more.
+
+- Zip codes API: Zippopotam is a really old api. If you search for a non existing country/zipcode, it throws an error. I had to handle this error with no specific messages from the API inside the controller. Maybe changing to another well-mantained zip code api could improve things.
