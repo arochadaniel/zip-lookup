@@ -1,6 +1,6 @@
 # Zip lookup full stack app
 
-This application handles the lookup of zip codes of your selected country. The API to get the zip code info is Zippopotam[http://www.zippopotam.us/].
+This application handles the lookup of zip codes of your selected country. The API to get the zip code info is [Zippopotam](http://www.zippopotam.us/).
 
 ## Backend
 
@@ -13,6 +13,8 @@ To run the tests, run in the terminal `npm test`
 ## Frontend
 
 The frontend was built with React.js, TypeScript, Apollo GraphQL and MUI. The project was initially created with CRA. Inside the modules folder you will find a `features` folder where all the business logic is handled, a `core` folder where all the necessary tecnologies for the application to work are located, and a `testing` folder where all the testing utils and base components are located.
+
+For the countries selection, I used the [REST Countries API](https://restcountries.com/).
 
 All tests are inside each spec folder in each feature.
 
