@@ -1,8 +1,8 @@
-## Zip lookup full stack app
+# Zip lookup full stack app
 
 This application handles the lookup of zip codes of your selected country. The API to get the zip code info is Zippopotam[http://www.zippopotam.us/].
 
-# Backend
+## Backend
 
 The backend was built with Node.js, TypeScript and Apollo GraphQL. Inside the modules folder you will find a `features` folder where the app business logic is handled, and a `graphql` folder where all the resolvers, types and the complete GraphQL schema of the application exist.
 
@@ -10,7 +10,7 @@ All tests are inside each spec folder in each feature.
 
 To run the tests, run in the terminal `npm test`
 
-# Frontend
+## Frontend
 
 The frontend was built with React.js, TypeScript, Apollo GraphQL and MUI. The project was initially created with CRA. Inside the modules folder you will find a `features` folder where all the business logic is handled, a `core` folder where all the necessary tecnologies for the application to work are located, and a `testing` folder where all the testing utils and base components are located.
 
@@ -18,7 +18,7 @@ All tests are inside each spec folder in each feature.
 
 To run the tests, run in the terminal `npm test`
 
-# Start the application
+## Start the application
 
 To start the application, first you need to install the dependencies in the `backend` and `frontend` folders with `npm install`.
 
@@ -28,7 +28,7 @@ After that, in another terminal enter the `frontend` folder and run `npm start`.
 
 With both servers running, you can test the application in your browser[http://localhost:3000].
 
-# To improve
+## To improve
 
 This application was built in less than 2 days, so there are areas where it can improve such as:
 
