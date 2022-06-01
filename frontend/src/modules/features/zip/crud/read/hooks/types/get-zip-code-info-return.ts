@@ -1,3 +1,3 @@
-import { ZipLookupResponseDto } from "../../types";
+import { ZipLookupResponseDto } from "../../../../types";
 
 export type GetZipCodeInfoReturn = { info: ZipLookupResponseDto };

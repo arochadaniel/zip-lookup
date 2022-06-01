@@ -1,9 +1,9 @@
 import { Box, Button, TextField } from "@mui/material";
 import { FC, useMemo } from "react";
 
-import { CountriesSelect } from "../countries";
+import { CountriesSelect } from "../../../countries";
 import { Send } from "@mui/icons-material";
-import { ZipLookupData } from "../types";
+import { ZipLookupData } from "../../../types";
 import { useForm } from "react-hook-form";
 
 interface Props {

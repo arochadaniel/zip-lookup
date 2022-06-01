@@ -1,9 +1,9 @@
 import { ApolloError, useLazyQuery } from "@apollo/client";
 
-import { GET_ZIP_CODE_INFO } from "../graphql/queries";
+import { GET_ZIP_CODE_INFO } from "../../../graphql/queries";
 import { GetZipCodeInfoReturn } from "./types";
-import { ZipLookupData } from "../types";
-import { appendZipLookupToHistory } from "../history/crud/create";
+import { ZipLookupData } from "../../../types";
+import { appendZipLookupToHistory } from "../../../history/crud/create";
 import cloneDeep from "lodash/cloneDeep";
 import { useCallback } from "react";
 

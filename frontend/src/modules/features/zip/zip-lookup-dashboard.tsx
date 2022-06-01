@@ -2,9 +2,9 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import { FC } from "react";
 import { ZipLookupHistory } from "./history/crud/read";
-import { ZipLookupPresenter } from "./zip-lookup-presenter";
+import { ZipLookupPresenter } from "./crud/read";
 
-export const ZipLookup: FC = () => {
+export const ZipLookupDashboard: FC = () => {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (

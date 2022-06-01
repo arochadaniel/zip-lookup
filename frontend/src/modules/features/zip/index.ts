@@ -1,1 +1,1 @@
-export * from "./zip-lookup";
+export * from "./zip-lookup-dashboard";

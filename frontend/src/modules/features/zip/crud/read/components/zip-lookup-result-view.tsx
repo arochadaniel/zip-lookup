@@ -1,8 +1,8 @@
 import { CircularProgress, Typography } from "@mui/material";
 
 import { FC } from "react";
-import { UseGetZipCodeInfoReturn } from "./hooks";
-import { ZipLookupHistoryContent } from "./history/crud/read/mapper/item";
+import { UseGetZipCodeInfoReturn } from "../hooks";
+import { ZipLookupHistoryContent } from "../../../history/crud/read/mapper/item";
 
 type Props = Omit<UseGetZipCodeInfoReturn, "onSubmit">;
 

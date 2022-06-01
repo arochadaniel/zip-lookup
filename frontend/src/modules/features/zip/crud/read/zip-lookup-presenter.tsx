@@ -1,7 +1,7 @@
 import { Card } from "@mui/material";
 import { FC } from "react";
 import { ZipLookupForm } from "./form";
-import { ZipLookupResultView } from "./zip-lookup-result-view";
+import { ZipLookupResultView } from "./components";
 import { useGetZipCodeInfo } from "./hooks";
 
 interface Props {}
